@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="MyCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">FSCJ Tutors</h1>
+      </ion-header-bar>
+      <ion-content>
+
+
+<div id="box">
+
+  
+    <div id="messageBox">
+     <div class="row">
+      <div class="col col-30" id="userText">
+             
+           </div>
+          <div class="col col-40" id="messageText">
+           
+          </div>
+          <div class="col col-40" id="numberText">
+           
+          </div>
+        </div>
+    </div>
+
+
+ </div>
+  
+  <input id="name" class="form-control" placeholder="enter name">
+  <input id="message" class="form-control" placeholder="enter subject">
+  <input id="number" class="form-control" placeholder="enter ph#">
+
+  <button ng-click="sendMessage()" id="sendBtn" class="button button-calm" >Send</button>
+
+      </ion-content>
+    </ion-pane>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  </body>
+</html>
